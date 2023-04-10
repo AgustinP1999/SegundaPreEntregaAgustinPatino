@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: linear-gradient(to bottom, #000000, #ffffff);
+}
+ /* inicio de la barra de navegacion */
+
+.navBar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 150px;
+}
+.title h1 {
+    margin: 0;
+    color: white;
+}
+.navLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navLinks li {
+    margin-right: 20px;
+}
+.navLinks li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navLinks li a:hover {
+    background-color: #555;
+}
+
+.navLinks li.active a {
+    background-color: #4CAF50;
+}
+
+.navBar.dark {
+    background-color: #222;
+}
+
+.navBar.dark .navLinks li a,
+.navBar.dark .title h1 {
+    filter: invert(1);
+}
+/* fin de la barra de navegacion */
+
+/* Inicio */
+.imagen {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen:hover {
+    transform: scale(1.1);
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.texto {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* fim de inicio */
+
+/* inicio Galeria */
+.gallery-img {
+    border: 2px solid #ddd;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 0.48rem;
+    border-radius: 10px;
+    filter: grayscale(100%);
+}
+
+.gallery-img:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    filter: grayscale(0%);
+}
+/* fin de Galeria */
+
+/* inicio de Css de Nosotros */
+.sobre-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #000000;
+}
+
+.sobre-nosotros img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.sobre-nosotros .nosotrosTitulo {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+}
+
+.miembros-equipo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #000000;
+}
+
+.miembro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.miembro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.miembro img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.miembro:hover img {
+    transform: rotate(360deg);
+}
+
+.miembro h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.miembro p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+}
+ /* fin de css de nosotros */
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 50px;
+}
+.formulario-contacto {
+    max-width: 600px;
+    color: white;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.ubicacion {
+	background-color: #F5F5F5;
+	padding: 20px;
+	margin: 20px;
+	border: 1px solid #CCCCCC;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.descripcion {
+	background-color: #F5F5F5;
+	padding: 20px;
+	margin: 20px;
+	border: 1px solid #CCCCCC;
+	border-radius: 10px;
+	text-align: justify;
+}
+
+.tituloUbicacion {
+	font-size: 36px;
+	margin-bottom: 10px;
+	color: #333333;
+}
+
+.tituloDescripcion {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #333333;
+}
+
+.parrDescripcion {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #666666;
+}
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.formulario-contacto label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+.formulario-contacto input[type="submit"] {
+    background-color: #616060;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-contacto input[type="submit"]:hover {
+    background-color: #84878a;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 140px;
+    padding-left: 300px;
+}
+
+.footer__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+    color: white;
+}
+
+.footer__icon i {
+    font-size: 24px;
+}
+
+.footer__icon--facebook {
+    background-color: #3b5998;
+}
+
+.footer__icon--facebook:hover {
+    background-color: #2d4373;
+}
+
+.footer__icon--instagram {
+    background-color: #e4405f;
+}
+
+.footer__icon--instagram:hover {
+    background-color: #942d45;
+}
+
+.footer__icon--whatsapp {
+    background-color: #25d366;
+}
+
+.footer__icon--whatsapp:hover {
+    background-color: #128c7e;
+}
+
+
+
